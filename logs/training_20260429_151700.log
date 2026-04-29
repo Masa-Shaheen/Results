@@ -1,0 +1,103 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/logs/training_20260429_151700.log
+2026-04-29 15:17:00,276 | INFO | ======================================================================
+2026-04-29 15:17:00,276 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-04-29 15:17:00,276 | INFO | Camera : C1  |  Split : 70/15/15  |  Epochs : 200  |  Patience : 30
+2026-04-29 15:17:00,276 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/logs/training_20260429_151700.log
+2026-04-29 15:17:00,276 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+NPZ files found (all cameras) : 15375
+
+✓ Total samples  (C1) : 5102
+✓ Unique trials              : 61
+✓ Quality mean ± std         : 4.118 ± 0.797
+
+✓ Exercise distribution:
+0    588
+1    539
+2    445
+3    545
+4    533
+5    516
+6    529
+7    532
+8    430
+9    445
+Name: exercise, dtype: int64
+Checking for corrupted files...
+  Removing 1 corrupted files from index
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E4_P12_T3_C1_seg5_MMPose_human3d_motionbert_3D.npz
+  Clean samples remaining: 5101
+
+── Sample rows ──
+    exercise person trial_id  segment  quality
+0          0     P0       T0        0   4.3667
+1          0     P0       T0        1   4.3667
+2          0     P0       T0        2   4.3667
+3          0     P0       T0        3   4.3667
+4          0     P0       T0        4   4.3667
+5          0     P0       T0        5   4.3667
+6          0     P0       T0        6   4.3667
+7          0     P0       T0        7   4.3667
+8          0     P0       T0        8   4.3667
+9          0     P0       T0        9   4.3667
+10         0     P0       T1        0   4.2600
+11         0     P0       T1        1   4.2600
+12         0     P0       T1        2   4.2600
+13         0     P0       T1        3   4.2600
+14         0     P0       T1        4   4.2600
+1    5101
+Name: camera, dtype: int64
+
+Total samples: 5101
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    0
+trial_id                                                   T1
+segment                                                     0
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (78, 17, 3)
+X range : [-0.369, 0.592]
+Y range : [-0.193, 0.198]
+Z range : [0.000, 0.994]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/plots/sample_skeleton_motion.png
+Joint 0 (Root/Hip):
+  X=-0.000  Y=0.000  Z=0.357
+
+Joint 1 (R-Hip) vs Joint 4 (L-Hip):
+  R-Hip X=0.002  |  L-Hip X=0.027
+
+Joint 10 (Head) vs Joint 0 (Root):
+  Head Y=-0.175  |  Root Y=0.000
+✓ BZUDataset defined (regression only)
+✓ ST-GCN regression model defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+Correct trials:   36 → train=26, val=5, test=5
+Erroneous trials: 25 → train=19, val=3, test=3
+  Train: 3777 samples | Val: 686 | Test: 638
+
+✓ Train / Val / Test split ready
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)
+2026-04-29 15:17:14,624 | INFO | ======================================================================
+2026-04-29 15:17:14,624 | INFO | STARTING REGRESSION TRAINING  (with Early Stopping on MAE)
+2026-04-29 15:17:14,624 | INFO | ======================================================================
+2026-04-29 15:17:14,624 | INFO | train=3777 val=686 test=638
+
+════════════════════════════════════════════════════════════════════
+  Camera C1  |  Train: 3777  Val: 686  Test: 638
+  Patience: 30  |  LR: 0.0003  |  Batch: 48
+════════════════════════════════════════════════════════════════════
+  Ep   1/200 | Tr loss=0.3884 mae=0.720 r2=-0.433 | Vl loss=0.1472 mae=0.433 r2=0.476 | Te loss=0.3232 mae=0.638 r2=-1.028 | ES 0/30 ★
+2026-04-29 15:17:35,845 | INFO |   Ep   1/200 | Tr loss=0.3884 mae=0.720 r2=-0.433 | Vl loss=0.1472 mae=0.433 r2=0.476 | Te loss=0.3232 mae=0.638 r2=-1.028 | ES 0/30 ★
+    ★ val_mae=0.4332  rmse=0.5598  r2=0.4761
+  Ep   2/200 | Tr loss=0.2778 mae=0.599 r2=0.072 | Vl loss=0.1267 mae=0.404 r2=0.567 | Te loss=0.2619 mae=0.582 r2=-0.467 | ES 0/30 ★
+2026-04-29 15:17:55,762 | INFO |   Ep   2/200 | Tr loss=0.2778 mae=0.599 r2=0.072 | Vl loss=0.1267 mae=0.404 r2=0.567 | Te loss=0.2619 mae=0.582 r2=-0.467 | ES 0/30 ★
+    ★ val_mae=0.4039  rmse=0.5088  r2=0.5672
+  Ep   3/200 | Tr loss=0.2481 mae=0.561 r2=0.186 | Vl loss=0.1254 mae=0.410 r2=0.573 | Te loss=0.2236 mae=0.531 r2=-0.190 | ES 1/30
+2026-04-29 15:18:15,792 | INFO |   Ep   3/200 | Tr loss=0.2481 mae=0.561 r2=0.186 | Vl loss=0.1254 mae=0.410 r2=0.573 | Te loss=0.2236 mae=0.531 r2=-0.190 | ES 1/30
+  Ep   4/200 | Tr loss=0.2220 mae=0.528 r2=0.292 | Vl loss=0.1253 mae=0.408 r2=0.574 | Te loss=0.2309 mae=0.542 r2=-0.239 | ES 2/30
+2026-04-29 15:18:35,683 | INFO |   Ep   4/200 | Tr loss=0.2220 mae=0.528 r2=0.292 | Vl loss=0.1253 mae=0.408 r2=0.574 | Te loss=0.2309 mae=0.542 r2=-0.239 | ES 2/30
