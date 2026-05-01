@@ -1,0 +1,140 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_22_22_00/logs/training_20260501_222201.log
+2026-05-01 22:22:01,094 | INFO | ======================================================================
+2026-05-01 22:22:01,094 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-01 22:22:01,095 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 50
+2026-05-01 22:22:01,095 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_22_22_00/logs/training_20260501_222201.log
+2026-05-01 22:22:01,095 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+NPZ files found (all cameras) : 15375
+
+✓ Total samples  (CNone) : 15375
+✓ Unique trials              : 61
+✓ Quality mean ± std         : 4.126 ± 0.795
+
+✓ Exercise distribution:
+0    1752
+1    1608
+2    1382
+3    1596
+4    1579
+5    1566
+6    1570
+7    1588
+8    1401
+9    1333
+Name: exercise, dtype: int64
+Checking for corrupted files...
+  Removing 3 corrupted files from index
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E0_P13_T5_C2_seg2_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E1_P14_T3_C2_seg6_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E4_P12_T3_C1_seg5_MMPose_human3d_motionbert_3D.npz
+  Clean samples remaining: 15372
+
+── Sample rows ──
+    exercise person trial_id  segment  quality
+0          0     P0       T0        0   4.3667
+1          0     P0       T0        1   4.3667
+2          0     P0       T0        2   4.3667
+3          0     P0       T0        3   4.3667
+4          0     P0       T0        4   4.3667
+5          0     P0       T0        5   4.3667
+6          0     P0       T0        6   4.3667
+7          0     P0       T0        7   4.3667
+8          0     P0       T0        8   4.3667
+9          0     P0       T0        9   4.3667
+10         0     P0       T0        0   4.3667
+11         0     P0       T0        1   4.3667
+12         0     P0       T0        2   4.3667
+13         0     P0       T0        3   4.3667
+14         0     P0       T0        4   4.3667
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+Total samples: 15372
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+الكاميرات الموجودة: [0, 1, 2]
+camera      0    1    2
+exercise               
+0         579  588  584
+1         532  539  536
+2         463  445  474
+3         525  545  526
+4         522  532  524
+5         525  516  525
+6         529  529  512
+7         529  532  527
+8         486  430  485
+9         457  445  431
+E0: correct=3 trials, erroneous=4 trials
+E1: correct=3 trials, erroneous=4 trials
+E2: correct=3 trials, erroneous=4 trials
+E3: correct=3 trials, erroneous=4 trials
+E4: correct=3 trials, erroneous=4 trials
+E5: correct=3 trials, erroneous=4 trials
+E6: correct=3 trials, erroneous=4 trials
+E7: correct=3 trials, erroneous=4 trials
+E8: correct=3 trials, erroneous=4 trials
+E9: correct=3 trials, erroneous=4 trials
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    0
+trial_id                                                   T0
+segment                                                     0
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (61, 17, 3)
+X range : [-0.369, 0.592]
+Y range : [0.000, 0.994]
+Z range : [-0.193, 0.198]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_22_22_00/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_22_22_00/plots/sample_skeleton_motion.png
+Axis ranges across all frames:
+X: [-0.369, 0.592] — likely left/right
+Y: [0.000, 0.994] — likely ???
+Z: [-0.193, 0.198] — likely height
+
+Hip  mean XYZ: [0.         0.32057488 0.        ]
+Head mean XYZ: [-0.14265826  0.9668146  -0.18420231]
+
+Difference (head - hip): [-0.14265826  0.6462397  -0.18420231]
+
+Camera 0:
+  Hip  XYZ: [0.    0.324 0.   ]
+  Head XYZ: [-0.144  0.968 -0.183]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+
+Camera 1:
+  Hip  XYZ: [0.    0.321 0.   ]
+  Head XYZ: [-0.143  0.967 -0.184]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+
+Camera 2:
+  Hip  XYZ: [0.    0.316 0.   ]
+  Head XYZ: [-0.142  0.966 -0.185]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+✓ BZUDataset defined (regression only)
+✓ ST-GCN regression model defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+
+=======================================================
+Samples → train=9865, val=2400, test=3107
+
+Correct vs Erroneous per split:
+  Train: correct=6091  erroneous=3774 | mean=4.064 std=0.836
+  Val  : correct=1842  erroneous= 558 | mean=4.345 std=0.588
+  Test : correct=2024  erroneous=1083 | mean=4.156 std=0.768
+
+✓ Train / Val / Test split ready (person-based)
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)

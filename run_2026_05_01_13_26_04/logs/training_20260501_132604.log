@@ -1,0 +1,165 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_04/logs/training_20260501_132604.log
+2026-05-01 13:26:04,641 | INFO | ======================================================================
+2026-05-01 13:26:04,641 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-01 13:26:04,641 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 50
+2026-05-01 13:26:04,641 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_04/logs/training_20260501_132604.log
+2026-05-01 13:26:04,641 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+NPZ files found (all cameras) : 15375
+
+✓ Total samples  (CNone) : 15375
+✓ Unique trials              : 61
+✓ Quality mean ± std         : 4.126 ± 0.795
+
+✓ Exercise distribution:
+0    1752
+1    1608
+2    1382
+3    1596
+4    1579
+5    1566
+6    1570
+7    1588
+8    1401
+9    1333
+Name: exercise, dtype: int64
+Checking for corrupted files...
+  Removing 3 corrupted files from index
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E0_P13_T5_C2_seg2_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E1_P14_T3_C2_seg6_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E4_P12_T3_C1_seg5_MMPose_human3d_motionbert_3D.npz
+  Clean samples remaining: 15372
+
+── Sample rows ──
+    exercise person trial_id  segment  quality
+0          0     P0       T0        0   4.3667
+1          0     P0       T0        1   4.3667
+2          0     P0       T0        2   4.3667
+3          0     P0       T0        3   4.3667
+4          0     P0       T0        4   4.3667
+5          0     P0       T0        5   4.3667
+6          0     P0       T0        6   4.3667
+7          0     P0       T0        7   4.3667
+8          0     P0       T0        8   4.3667
+9          0     P0       T0        9   4.3667
+10         0     P0       T0        0   4.3667
+11         0     P0       T0        1   4.3667
+12         0     P0       T0        2   4.3667
+13         0     P0       T0        3   4.3667
+14         0     P0       T0        4   4.3667
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+Total samples: 15372
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+الكاميرات الموجودة: [0, 1, 2]
+camera      0    1    2
+exercise               
+0         579  588  584
+1         532  539  536
+2         463  445  474
+3         525  545  526
+4         522  532  524
+5         525  516  525
+6         529  529  512
+7         529  532  527
+8         486  430  485
+9         457  445  431
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    0
+trial_id                                                   T0
+segment                                                     0
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (61, 17, 3)
+X range : [-0.369, 0.592]
+Y range : [0.000, 0.994]
+Z range : [-0.193, 0.198]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_04/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_04/plots/sample_skeleton_motion.png
+Axis ranges across all frames:
+X: [-0.369, 0.592] — likely left/right
+Y: [0.000, 0.994] — likely ???
+Z: [-0.193, 0.198] — likely height
+
+Hip  mean XYZ: [0.         0.32057488 0.        ]
+Head mean XYZ: [-0.14265826  0.9668146  -0.18420231]
+
+Difference (head - hip): [-0.14265826  0.6462397  -0.18420231]
+✓ BZUDataset defined (regression only)
+✓ ST-GCN regression model defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+
+  E0:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T2', 'T3', 'T5']  val=['T1', 'T6']  test=['T0', 'T4']
+
+  E1:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T0', 'T3', 'T6']  val=['T1', 'T4']  test=['T2', 'T5']
+
+  E2:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T0', 'T4', 'T5']  val=['T2', 'T3']  test=['T1', 'T6']
+
+  E3:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T1', 'T3', 'T5']  val=['T0', 'T6']  test=['T2', 'T4']
+
+  E4:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T1', 'T3', 'T6']  val=['T0', 'T5']  test=['T2', 'T4']
+
+  E5:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T1', 'T3', 'T4']  val=['T0', 'T6']  test=['T2', 'T5']
+
+  E6:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T1', 'T4', 'T5']  val=['T0', 'T6']  test=['T2', 'T3']
+
+  E7:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T0', 'T5', 'T6']  val=['T1', 'T3']  test=['T2', 'T4']
+
+  E8:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T2', 'T4', 'T5']  val=['T1', 'T6']  test=['T0', 'T3']
+
+  E9:
+    Correct   trials : ['T0', 'T1', 'T2']
+    Erroneous trials : ['T3', 'T4', 'T5', 'T6']
+    → train=['T0', 'T4', 'T6']  val=['T2', 'T5']  test=['T1', 'T3']
+
+=======================================================
+Samples → train=6125, val=4704, test=4543
+Exercises in train : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Exercises in val   : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Exercises in test  : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Correct vs Erroneous per split:
+  Train: correct=3434  erroneous=2691 | mean=4.004 std=0.843
+  Val  : correct=3318  erroneous=1386 | mean=4.191 std=0.785
+  Test : correct=3205  erroneous=1338 | mean=4.225 std=0.713
+
+✓ Train / Val / Test split ready (trial_id within each exercise)
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)

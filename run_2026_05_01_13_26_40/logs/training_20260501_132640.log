@@ -1,0 +1,26 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_40/logs/training_20260501_132640.log
+2026-05-01 13:26:40,110 | INFO | ======================================================================
+2026-05-01 13:26:40,110 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-01 13:26:40,110 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 50
+2026-05-01 13:26:40,110 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_01_13_26_40/logs/training_20260501_132640.log
+2026-05-01 13:26:40,110 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+NPZ files found (all cameras) : 15375
+
+✓ Total samples  (CNone) : 15375
+✓ Unique trials              : 61
+✓ Quality mean ± std         : 4.126 ± 0.795
+
+✓ Exercise distribution:
+0    1752
+1    1608
+2    1382
+3    1596
+4    1579
+5    1566
+6    1570
+7    1588
+8    1401
+9    1333
+Name: exercise, dtype: int64
+Checking for corrupted files...
