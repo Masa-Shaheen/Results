@@ -1,0 +1,225 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_07_09_53_39/logs/training_20260507_095339.log
+2026-05-07 09:53:39,581 | INFO | ======================================================================
+2026-05-07 09:53:39,582 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-07 09:53:39,582 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 80
+2026-05-07 09:53:39,582 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_07_09_53_39/logs/training_20260507_095339.log
+2026-05-07 09:53:39,582 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+NPZ files found (all cameras) : 15375
+
+✓ Total samples  (CNone) : 15375
+✓ Unique trials              : 61
+✓ Quality mean ± std         : 4.126 ± 0.795
+
+✓ Exercise distribution:
+0    1752
+1    1608
+2    1382
+3    1596
+4    1579
+5    1566
+6    1570
+7    1588
+8    1401
+9    1333
+Name: exercise, dtype: int64
+Checking for corrupted files...
+  Removing 3 corrupted files from index
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E0_P13_T5_C2_seg2_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E1_P14_T3_C2_seg6_MMPose_human3d_motionbert_3D.npz
+    BAD: /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_MMPose_human3d_motionbert_H36M_3D_1_2026/E4_P12_T3_C1_seg5_MMPose_human3d_motionbert_3D.npz
+  Clean samples remaining: 15372
+
+── Sample rows ──
+    exercise person trial_id  segment  quality
+0          0     P0       T0        0   4.3667
+1          0     P0       T0        1   4.3667
+2          0     P0       T0        2   4.3667
+3          0     P0       T0        3   4.3667
+4          0     P0       T0        4   4.3667
+5          0     P0       T0        5   4.3667
+6          0     P0       T0        6   4.3667
+7          0     P0       T0        7   4.3667
+8          0     P0       T0        8   4.3667
+9          0     P0       T0        9   4.3667
+10         0     P0       T0        0   4.3667
+11         0     P0       T0        1   4.3667
+12         0     P0       T0        2   4.3667
+13         0     P0       T0        3   4.3667
+14         0     P0       T0        4   4.3667
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+Total samples: 15372
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+الكاميرات الموجودة: [0, 1, 2]
+camera      0    1    2
+exercise               
+0         579  588  584
+1         532  539  536
+2         463  445  474
+3         525  545  526
+4         522  532  524
+5         525  516  525
+6         529  529  512
+7         529  532  527
+8         486  430  485
+9         457  445  431
+E0: correct=3 trials, erroneous=4 trials
+E1: correct=3 trials, erroneous=4 trials
+E2: correct=3 trials, erroneous=4 trials
+E3: correct=3 trials, erroneous=4 trials
+E4: correct=3 trials, erroneous=4 trials
+E5: correct=3 trials, erroneous=4 trials
+E6: correct=3 trials, erroneous=4 trials
+E7: correct=3 trials, erroneous=4 trials
+E8: correct=3 trials, erroneous=4 trials
+E9: correct=3 trials, erroneous=4 trials
+Frame length distribution (sample of 500 files):
+  min    = 31
+  max    = 545
+  mean   = 103.9
+  median = 93.0
+  std    = 51.5
+
+Percentiles:
+   25th = 73
+   50th = 93
+   75th = 120
+   90th = 155
+   95th = 178
+   99th = 293
+
+Value counts (top 10):
+   104 frames →   10 files (2.0%)
+    91 frames →   10 files (2.0%)
+    73 frames →   10 files (2.0%)
+    93 frames →    9 files (1.8%)
+    88 frames →    9 files (1.8%)
+    82 frames →    9 files (1.8%)
+    78 frames →    9 files (1.8%)
+    67 frames →    9 files (1.8%)
+    65 frames →    9 files (1.8%)
+   113 frames →    8 files (1.6%)
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    0
+trial_id                                                   T0
+segment                                                     0
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (61, 17, 3)
+X range : [-0.369, 0.592]
+Y range : [0.000, 0.994]
+Z range : [-0.193, 0.198]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_07_09_53_39/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_07_09_53_39/plots/sample_skeleton_motion.png
+Axis ranges across all frames:
+X: [-0.369, 0.592] — likely left/right
+Y: [0.000, 0.994] — likely ???
+Z: [-0.193, 0.198] — likely height
+
+Hip  mean XYZ: [0.         0.32057488 0.        ]
+Head mean XYZ: [-0.14265826  0.9668146  -0.18420231]
+
+Difference (head - hip): [-0.14265826  0.6462397  -0.18420231]
+
+Camera 0:
+  Hip  XYZ: [0.    0.324 0.   ]
+  Head XYZ: [-0.144  0.968 -0.183]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+
+Camera 1:
+  Hip  XYZ: [0.    0.321 0.   ]
+  Head XYZ: [-0.143  0.967 -0.184]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+
+Camera 2:
+  Hip  XYZ: [0.    0.316 0.   ]
+  Head XYZ: [-0.142  0.966 -0.185]
+  X range: [-0.37, 0.59]
+  Z range: [-0.19, 0.20]
+✓ BZUDataset defined (regression only)
+✓ Kipf GCN sanity check passed — output shape: torch.Size([2])
+✓ Total trainable parameters: 681,485
+✓ GCN_Regression (Kipf & Welling) defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+
+=======================================================
+Samples → train=8453, val=3812, test=3107
+
+Correct vs Erroneous per split:
+  Train: correct=5812  erroneous=2641 | mean=4.134 std=0.836
+  Val  : correct=2121  erroneous=1691 | mean=4.086 std=0.717
+  Test : correct=2024  erroneous=1083 | mean=4.156 std=0.768
+
+✓ Train / Val / Test split ready (person-based)
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)
+2026-05-07 09:54:08,901 | INFO | ======================================================================
+2026-05-07 09:54:08,902 | INFO | STARTING REGRESSION TRAINING  (with Early Stopping on MAE)
+2026-05-07 09:54:08,902 | INFO | ======================================================================
+2026-05-07 09:54:08,902 | INFO | train=8453 val=3812 test=3107
+
+════════════════════════════════════════════════════════════════════
+  Camera CNone  |  Train: 8453  Val: 3812  Test: 3107
+  Patience: 80  |  LR: 1e-4  |  Batch: 48
+════════════════════════════════════════════════════════════════════
+  Ep   1/300 | Tr loss=0.7609 mae=0.621 r2=-0.091 pcc=0.526 | Vl loss=0.6501 mae=0.635 r2=-0.271 pcc=0.630 | Te mae=0.610 pcc=0.591 | ES 0/80 ★
+2026-05-07 09:54:39,000 | INFO |   Ep   1/300 | Tr loss=0.7609 mae=0.621 r2=-0.091 pcc=0.526 | Vl loss=0.6501 mae=0.635 r2=-0.271 pcc=0.630 | Te mae=0.610 pcc=0.591 | ES 0/80 ★
+    ★ val_mae=0.6350  rmse=0.8085  r2=-0.2715  pcc=0.6304
+  Ep   2/300 | Tr loss=0.5245 mae=0.524 r2=0.248 pcc=0.696 | Vl loss=0.4057 mae=0.507 r2=0.207 pcc=0.668 | Te mae=0.545 pcc=0.597 | ES 0/80 ★
+2026-05-07 09:55:09,005 | INFO |   Ep   2/300 | Tr loss=0.5245 mae=0.524 r2=0.248 pcc=0.696 | Vl loss=0.4057 mae=0.507 r2=0.207 pcc=0.668 | Te mae=0.545 pcc=0.597 | ES 0/80 ★
+    ★ val_mae=0.5073  rmse=0.6383  r2=0.2075  pcc=0.6679
+  Ep   3/300 | Tr loss=0.4474 mae=0.490 r2=0.359 pcc=0.733 | Vl loss=0.3823 mae=0.503 r2=0.253 pcc=0.672 | Te mae=0.550 pcc=0.605 | ES 0/80 ★
+2026-05-07 09:55:39,507 | INFO |   Ep   3/300 | Tr loss=0.4474 mae=0.490 r2=0.359 pcc=0.733 | Vl loss=0.3823 mae=0.503 r2=0.253 pcc=0.672 | Te mae=0.550 pcc=0.605 | ES 0/80 ★
+    ★ val_mae=0.5028  rmse=0.6196  r2=0.2534  pcc=0.6717
+  Ep   4/300 | Tr loss=0.4001 mae=0.467 r2=0.429 pcc=0.754 | Vl loss=0.3604 mae=0.488 r2=0.296 pcc=0.691 | Te mae=0.550 pcc=0.608 | ES 0/80 ★
+2026-05-07 09:56:09,395 | INFO |   Ep   4/300 | Tr loss=0.4001 mae=0.467 r2=0.429 pcc=0.754 | Vl loss=0.3604 mae=0.488 r2=0.296 pcc=0.691 | Te mae=0.550 pcc=0.608 | ES 0/80 ★
+    ★ val_mae=0.4884  rmse=0.6016  r2=0.2962  pcc=0.6911
+  Ep   5/300 | Tr loss=0.3806 mae=0.459 r2=0.455 pcc=0.759 | Vl loss=0.3621 mae=0.490 r2=0.293 pcc=0.699 | Te mae=0.562 pcc=0.606 | ES 1/80
+2026-05-07 09:56:39,382 | INFO |   Ep   5/300 | Tr loss=0.3806 mae=0.459 r2=0.455 pcc=0.759 | Vl loss=0.3621 mae=0.490 r2=0.293 pcc=0.699 | Te mae=0.562 pcc=0.606 | ES 1/80
+  Ep   6/300 | Tr loss=0.3550 mae=0.444 r2=0.491 pcc=0.766 | Vl loss=0.3681 mae=0.486 r2=0.281 pcc=0.702 | Te mae=0.553 pcc=0.613 | ES 0/80 ★
+2026-05-07 09:57:09,023 | INFO |   Ep   6/300 | Tr loss=0.3550 mae=0.444 r2=0.491 pcc=0.766 | Vl loss=0.3681 mae=0.486 r2=0.281 pcc=0.702 | Te mae=0.553 pcc=0.613 | ES 0/80 ★
+    ★ val_mae=0.4862  rmse=0.6081  r2=0.2809  pcc=0.7019
+  Ep   7/300 | Tr loss=0.3347 mae=0.430 r2=0.522 pcc=0.777 | Vl loss=0.3780 mae=0.493 r2=0.262 pcc=0.697 | Te mae=0.556 pcc=0.611 | ES 1/80
+2026-05-07 09:57:38,833 | INFO |   Ep   7/300 | Tr loss=0.3347 mae=0.430 r2=0.522 pcc=0.777 | Vl loss=0.3780 mae=0.493 r2=0.262 pcc=0.697 | Te mae=0.556 pcc=0.611 | ES 1/80
+  Ep   8/300 | Tr loss=0.3365 mae=0.429 r2=0.517 pcc=0.772 | Vl loss=0.3816 mae=0.486 r2=0.254 pcc=0.699 | Te mae=0.546 pcc=0.613 | ES 2/80
+2026-05-07 09:58:08,643 | INFO |   Ep   8/300 | Tr loss=0.3365 mae=0.429 r2=0.517 pcc=0.772 | Vl loss=0.3816 mae=0.486 r2=0.254 pcc=0.699 | Te mae=0.546 pcc=0.613 | ES 2/80
+  Ep   9/300 | Tr loss=0.3287 mae=0.422 r2=0.529 pcc=0.773 | Vl loss=0.3675 mae=0.463 r2=0.281 pcc=0.697 | Te mae=0.522 pcc=0.619 | ES 0/80 ★
+2026-05-07 09:58:38,796 | INFO |   Ep   9/300 | Tr loss=0.3287 mae=0.422 r2=0.529 pcc=0.773 | Vl loss=0.3675 mae=0.463 r2=0.281 pcc=0.697 | Te mae=0.522 pcc=0.619 | ES 0/80 ★
+    ★ val_mae=0.4625  rmse=0.6080  r2=0.2811  pcc=0.6967
+  Ep  10/300 | Tr loss=0.3100 mae=0.410 r2=0.555 pcc=0.783 | Vl loss=0.3657 mae=0.461 r2=0.285 pcc=0.697 | Te mae=0.519 pcc=0.616 | ES 0/80 ★
+2026-05-07 09:59:08,871 | INFO |   Ep  10/300 | Tr loss=0.3100 mae=0.410 r2=0.555 pcc=0.783 | Vl loss=0.3657 mae=0.461 r2=0.285 pcc=0.697 | Te mae=0.519 pcc=0.616 | ES 0/80 ★
+    ★ val_mae=0.4607  rmse=0.6065  r2=0.2846  pcc=0.6973
+  Ep  11/300 | Tr loss=0.2959 mae=0.398 r2=0.576 pcc=0.791 | Vl loss=0.3569 mae=0.436 r2=0.301 pcc=0.701 | Te mae=0.492 pcc=0.628 | ES 0/80 ★
+2026-05-07 09:59:38,663 | INFO |   Ep  11/300 | Tr loss=0.2959 mae=0.398 r2=0.576 pcc=0.791 | Vl loss=0.3569 mae=0.436 r2=0.301 pcc=0.701 | Te mae=0.492 pcc=0.628 | ES 0/80 ★
+    ★ val_mae=0.4361  rmse=0.5995  r2=0.3011  pcc=0.7007
+  Ep  12/300 | Tr loss=0.2920 mae=0.392 r2=0.583 pcc=0.791 | Vl loss=0.3486 mae=0.430 r2=0.317 pcc=0.706 | Te mae=0.483 pcc=0.632 | ES 0/80 ★
+2026-05-07 10:00:08,576 | INFO |   Ep  12/300 | Tr loss=0.2920 mae=0.392 r2=0.583 pcc=0.791 | Vl loss=0.3486 mae=0.430 r2=0.317 pcc=0.706 | Te mae=0.483 pcc=0.632 | ES 0/80 ★
+    ★ val_mae=0.4297  rmse=0.5926  r2=0.3171  pcc=0.7056
+  Ep  13/300 | Tr loss=0.2775 mae=0.382 r2=0.603 pcc=0.797 | Vl loss=0.3439 mae=0.423 r2=0.326 pcc=0.703 | Te mae=0.474 pcc=0.634 | ES 0/80 ★
+2026-05-07 10:00:38,516 | INFO |   Ep  13/300 | Tr loss=0.2775 mae=0.382 r2=0.603 pcc=0.797 | Vl loss=0.3439 mae=0.423 r2=0.326 pcc=0.703 | Te mae=0.474 pcc=0.634 | ES 0/80 ★
+    ★ val_mae=0.4226  rmse=0.5885  r2=0.3263  pcc=0.7031
+  Ep  14/300 | Tr loss=0.2745 mae=0.377 r2=0.606 pcc=0.795 | Vl loss=0.3390 mae=0.415 r2=0.336 pcc=0.700 | Te mae=0.469 pcc=0.637 | ES 0/80 ★
+2026-05-07 10:01:08,204 | INFO |   Ep  14/300 | Tr loss=0.2745 mae=0.377 r2=0.606 pcc=0.795 | Vl loss=0.3390 mae=0.415 r2=0.336 pcc=0.700 | Te mae=0.469 pcc=0.637 | ES 0/80 ★
+    ★ val_mae=0.4151  rmse=0.5843  r2=0.3360  pcc=0.6998
+  Ep  15/300 | Tr loss=0.2626 mae=0.369 r2=0.625 pcc=0.804 | Vl loss=0.3382 mae=0.415 r2=0.337 pcc=0.703 | Te mae=0.470 pcc=0.633 | ES 0/80 ★
+2026-05-07 10:01:38,174 | INFO |   Ep  15/300 | Tr loss=0.2626 mae=0.369 r2=0.625 pcc=0.804 | Vl loss=0.3382 mae=0.415 r2=0.337 pcc=0.703 | Te mae=0.470 pcc=0.633 | ES 0/80 ★
+    ★ val_mae=0.4148  rmse=0.5837  r2=0.3374  pcc=0.7026
+  Ep  16/300 | Tr loss=0.2666 mae=0.370 r2=0.617 pcc=0.799 | Vl loss=0.3342 mae=0.409 r2=0.345 pcc=0.706 | Te mae=0.467 pcc=0.634 | ES 0/80 ★
+2026-05-07 10:02:08,044 | INFO |   Ep  16/300 | Tr loss=0.2666 mae=0.370 r2=0.617 pcc=0.799 | Vl loss=0.3342 mae=0.409 r2=0.345 pcc=0.706 | Te mae=0.467 pcc=0.634 | ES 0/80 ★
+    ★ val_mae=0.4088  rmse=0.5802  r2=0.3452  pcc=0.7055
+  Ep  17/300 | Tr loss=0.2595 mae=0.361 r2=0.631 pcc=0.805 | Vl loss=0.3315 mae=0.407 r2=0.351 pcc=0.704 | Te mae=0.463 pcc=0.633 | ES 0/80 ★
+2026-05-07 10:02:38,215 | INFO |   Ep  17/300 | Tr loss=0.2595 mae=0.361 r2=0.631 pcc=0.805 | Vl loss=0.3315 mae=0.407 r2=0.351 pcc=0.704 | Te mae=0.463 pcc=0.633 | ES 0/80 ★
+    ★ val_mae=0.4073  rmse=0.5779  r2=0.3505  pcc=0.7041
