@@ -1,0 +1,80 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_MultiView_EarlyFusion_Results/run_2026_05_12_17_36_00/logs/training_20260512_173600.log
+2026-05-12 17:36:00,308 | INFO | ======================================================================
+2026-05-12 17:36:00,309 | INFO | ST-GCN Multi-View EARLY FUSION Regression | BZU Physiotherapy Dataset
+2026-05-12 17:36:00,309 | INFO | Cameras : [0, 1, 2]  |  NUM_VIEWS=3  |  in_features=18  |  Epochs=300  |  Patience=80
+2026-05-12 17:36:00,309 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+
+[TRAIN] NPZ files found : 9477
+  Segments (samples)     : 3286
+  All 3 views present    : 3003 (91.4%)
+    cam0: 3174/3286 (96.6%)
+    cam1: 3132/3286 (95.3%)
+    cam2: 3171/3286 (96.5%)
+  Unique trials          : 327
+  Quality mean±std       : 4.138 ± 0.808
+
+[VALID] NPZ files found : 2790
+  Segments (samples)     : 992
+  All 3 views present    : 866 (87.3%)
+    cam0: 940/992 (94.8%)
+    cam1: 925/992 (93.2%)
+    cam2: 925/992 (93.2%)
+  Unique trials          : 100
+  Quality mean±std       : 4.246 ± 0.732
+
+[TEST] NPZ files found : 3108
+  Segments (samples)     : 1046
+  All 3 views present    : 1024 (97.9%)
+    cam0: 1033/1046 (98.8%)
+    cam1: 1045/1046 (99.9%)
+    cam2: 1030/1046 (98.5%)
+  Unique trials          : 107
+  Quality mean±std       : 4.032 ± 0.776
+
+Checking for corrupted files...
+  [TRAIN] Clean samples : 3286
+  [VALID] Clean samples : 992
+  [TEST] Clean samples : 1046
+
+✓ No data-leakage detected across splits
+
+════════════════════════════════════════════════════════════════════
+  Split     Samples   Correct   Erroneous   Q mean   Q std   Q min   Q max
+  ──────────────────────────────────────────────────────────────────
+  Train        3286      2113        1173    4.138   0.808   1.340   5.000
+  Val           992       683         309    4.246   0.732   2.280   5.000
+  Test         1046       679         367    4.032   0.776   2.140   5.000
+════════════════════════════════════════════════════════════════════
+
+✓ Multi-view index ready  →  train / val / test DataFrames built
+
+View coverage per split:
+  Train cam0_path: 3174/3286
+  Train cam1_path: 3132/3286
+  Train cam2_path: 3171/3286
+  Val cam0_path: 940/992
+  Val cam1_path: 925/992
+  Val cam2_path: 925/992
+  Test cam0_path: 1033/1046
+  Test cam1_path: 1045/1046
+  Test cam2_path: 1030/1046
+
+Frame length distribution (sample of 300 files):
+  min=27  max=174  mean=86.5  median=83.0  std=29.7
+✓ Skeleton visualisation helpers defined
+person      P0
+exercise     0
+trial_id    T1
+segment      0
+Name: 10, dtype: object
+Skeleton shape : (81, 17, 3)
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_MultiView_EarlyFusion_Results/run_2026_05_12_17_36_00/plots/sample_skeleton_3views.png
+✓ BZUDataset multi-view sanity check passed
+  Fused skeleton shape : torch.Size([100, 17, 18])   (T=100, J=17, C=18=6×3 views)
+✓ Multi-view GCN sanity check passed — output shape: torch.Size([2])
+  in_features = 18  (6 × 3 views)
+✓ Total trainable parameters: 682,277
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale (multi-view) and run_epoch defined
