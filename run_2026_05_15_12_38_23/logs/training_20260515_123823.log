@@ -1,0 +1,244 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_15_12_38_23/logs/training_20260515_123823.log
+2026-05-15 12:38:23,977 | INFO | ======================================================================
+2026-05-15 12:38:23,978 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-15 12:38:23,978 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 80
+2026-05-15 12:38:23,979 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_15_12_38_23/logs/training_20260515_123823.log
+2026-05-15 12:38:23,979 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+
+[TRAIN] NPZ files found : 9477
+  Samples          : 9477
+  Unique trials    : 327
+  Quality mean±std : 4.127 ± 0.812
+  Exercise dist    :
+0     961
+1     966
+2     829
+3     979
+4     970
+5     933
+6     954
+7     965
+8     903
+9    1017
+
+[VALID] NPZ files found : 2790
+  Samples          : 2790
+  Unique trials    : 100
+  Quality mean±std : 4.232 ± 0.741
+  Exercise dist    :
+0    326
+1    316
+2    295
+3    298
+4    322
+5    312
+6    302
+7    304
+8    181
+9    134
+
+[TEST] NPZ files found : 3108
+  Samples          : 3108
+  Unique trials    : 107
+  Quality mean±std : 4.031 ± 0.777
+  Exercise dist    :
+0    465
+1    326
+2    258
+3    319
+4    287
+5    321
+6    314
+7    319
+8    317
+9    182
+
+Checking for corrupted files...
+  [TRAIN] Removing 1 corrupted file(s)
+  [TRAIN] Clean samples : 9476
+  [VALID] Clean samples : 2790
+  [TEST] Removing 2 corrupted file(s)
+  [TEST] Clean samples : 3106
+
+✓ No data-leakage detected across splits
+
+════════════════════════════════════════════════════════════════════
+  Split     Samples   Correct   Erroneous   Q mean   Q std   Q min   Q max
+  ──────────────────────────────────────────────────────────────────
+  Train        9476      6037        3439    4.127   0.812   1.340   5.000
+  Val          2790      1905         885    4.232   0.741   2.280   5.000
+  Test         3106      2015        1091    4.032   0.777   2.140   5.000
+════════════════════════════════════════════════════════════════════
+
+✓ Pre-split index ready  →  train / val / test DataFrames built
+0    5147
+1    5101
+2    5124
+Name: camera, dtype: int64
+
+الكاميرات الموجودة: [0, 1, 2]
+camera      0    1    2
+exercise               
+0         579  588  584
+1         532  539  536
+2         463  445  474
+3         525  545  526
+4         522  532  524
+5         525  516  525
+6         529  529  512
+7         529  532  527
+8         486  430  485
+9         457  445  431
+E0: correct=3 trials, erroneous=4 trials
+E1: correct=3 trials, erroneous=4 trials
+E2: correct=3 trials, erroneous=4 trials
+E3: correct=3 trials, erroneous=4 trials
+E4: correct=3 trials, erroneous=4 trials
+E5: correct=3 trials, erroneous=4 trials
+E6: correct=3 trials, erroneous=4 trials
+E7: correct=3 trials, erroneous=4 trials
+E8: correct=3 trials, erroneous=4 trials
+E9: correct=3 trials, erroneous=4 trials
+Frame length distribution (sample of 500 files):
+  min    = 28
+  max    = 301
+  mean   = 100.0
+  median = 91.0
+  std    = 39.3
+
+Percentiles:
+   25th = 72
+   50th = 91
+   75th = 121
+   90th = 145
+   95th = 176
+   99th = 231
+
+Value counts (top 10):
+    79 frames →   14 files (2.8%)
+    91 frames →   12 files (2.4%)
+    87 frames →   11 files (2.2%)
+    68 frames →   11 files (2.2%)
+    90 frames →   10 files (2.0%)
+   107 frames →    9 files (1.8%)
+    76 frames →    9 files (1.8%)
+    71 frames →    9 files (1.8%)
+    84 frames →    8 files (1.6%)
+    81 frames →    8 files (1.6%)
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    0
+trial_id                                                   T0
+segment                                                     0
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (61, 17, 3)
+X range : [-0.369, 0.592]
+Y range : [-0.193, 0.198]
+Z range : [0.000, 0.994]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_15_12_38_23/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_15_12_38_23/plots/sample_skeleton_motion.png
+Axis ranges across all frames:
+X: [-0.369, 0.592] — likely left/right
+Y: [-0.193, 0.198] — likely ???
+Z: [0.000, 0.994] — likely height
+
+Hip  mean XYZ: [0.         0.         0.32057488]
+Head mean XYZ: [-0.14265826 -0.18420231  0.9668146 ]
+
+Difference (head - hip): [-0.14265826 -0.18420231  0.6462397 ]
+
+Camera 0:
+  Hip  XYZ: [0.    0.    0.324]
+  Head XYZ: [-0.144 -0.183  0.968]
+  X range: [-0.37, 0.59]
+  Z range: [0.00, 0.99]
+
+Camera 1:
+  Hip  XYZ: [0.    0.    0.321]
+  Head XYZ: [-0.143 -0.184  0.967]
+  X range: [-0.37, 0.59]
+  Z range: [0.00, 0.99]
+
+Camera 2:
+  Hip  XYZ: [0.    0.    0.316]
+  Head XYZ: [-0.142 -0.185  0.966]
+  X range: [-0.37, 0.59]
+  Z range: [0.00, 0.99]
+✓ BZUDataset defined (regression only)
+✓ True ST-GCN sanity check passed — output shape: torch.Size([2])
+✓ Total trainable parameters: 2,632,077
+✓ STGCN_Regression (True ST-GCN, Yan et al. 2018) defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+=================================================================
+Quality score distribution audit
+=================================================================
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_15_12_38_23/plots/split_quality_distributions.png
+
+Split    Type              n    mean     std    min    25%    50%    75%    max
+----------------------------------------------------------------------
+Train    Correct (T≤2)   6037   4.593   0.302   3.68   4.41   4.62   4.84   5.00
+Train    Erroneous (T≥3)   3439   3.310   0.781   1.34   2.83   3.44   3.86   4.82
+
+Val      Correct (T≤2)   1905   4.648   0.300   3.56   4.50   4.72   4.86   5.00
+Val      Erroneous (T≥3)    885   3.337   0.601   2.28   2.85   3.20   3.80   4.72
+
+Test     Correct (T≤2)   2015   4.491   0.417   3.40   4.20   4.58   4.80   5.00
+Test     Erroneous (T≥3)   1091   3.183   0.535   2.14   2.74   3.22   3.54   4.38
+
+=================================================================
+Person distribution across splits
+=================================================================
+  Train : ['P0', 'P10', 'P14', 'P15', 'P2', 'P3', 'P4', 'P5', 'P7']
+  Val   : ['P1', 'P11', 'P6']
+  Test  : ['P12', 'P13', 'P8', 'P9']
+
+Per-person quality mean per split:
+
+  Train:
+         mean    std  count
+person                     
+P0      4.509  0.341    857
+P10     3.281  0.914   1499
+P14     3.660  0.847   1354
+P15     3.647  0.702   1412
+P2      4.729  0.191    882
+P3      4.594  0.221    864
+P4      4.575  0.269    858
+P5      4.663  0.261    880
+P7      4.655  0.226    870
+
+  Val:
+         mean    std  count
+person                     
+P1      4.795  0.138    866
+P11     3.523  0.699   1087
+P6      4.570  0.280    837
+
+  Test:
+         mean    std  count
+person                     
+P12     3.148  0.661    668
+P13     3.684  0.648    693
+P8      4.603  0.324    872
+P9      4.413  0.459    873
+
+=================================================================
+Exercise balance across splits
+=================================================================
+    Train  Val  Test  Train%  Val%  Test%
+E0    961  326   464    10.1  11.7   14.9
+E1    965  316   326    10.2  11.3   10.5
+E2    829  295   258     8.7  10.6    8.3
+E3    979  298   319    10.3  10.7   10.3
+E4    970  322   286    10.2  11.5    9.2
+E5    933  312   321     9.8  11.2   10.3
+E6    954  302   314    10.1  10.8   10.1
+E7    965  304   319    10.2  10.9   10.3
+E8    903  181   317     9.5   6.5   10.2
+E9   1017  134   182    10.7   4.8    5.9
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)
