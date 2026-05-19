@@ -572,3 +572,113 @@ Train after  mirroring: 18460
 2026-05-19 22:40:27,344 | INFO |   Ep  99/300 | Tr loss=0.1622 mae=0.423 r2=0.621 pcc=0.788 | Vl loss=0.1035 mae=0.308 r2=0.607 pcc=0.816 | ES 86/100
   Ep 100/300 | Tr loss=0.1636 mae=0.425 r2=0.618 pcc=0.787 | Vl loss=0.1079 mae=0.318 r2=0.591 pcc=0.813 | ES 87/100
 2026-05-19 22:42:02,010 | INFO |   Ep 100/300 | Tr loss=0.1636 mae=0.425 r2=0.618 pcc=0.787 | Vl loss=0.1079 mae=0.318 r2=0.591 pcc=0.813 | ES 87/100
+  Ep 101/300 | Tr loss=0.1614 mae=0.421 r2=0.620 pcc=0.787 | Vl loss=0.1112 mae=0.323 r2=0.577 pcc=0.799 | ES 88/100
+2026-05-19 22:43:36,538 | INFO |   Ep 101/300 | Tr loss=0.1614 mae=0.421 r2=0.620 pcc=0.787 | Vl loss=0.1112 mae=0.323 r2=0.577 pcc=0.799 | ES 88/100
+  Ep 102/300 | Tr loss=0.1616 mae=0.423 r2=0.624 pcc=0.790 | Vl loss=0.1059 mae=0.309 r2=0.596 pcc=0.808 | ES 89/100
+2026-05-19 22:45:10,800 | INFO |   Ep 102/300 | Tr loss=0.1616 mae=0.423 r2=0.624 pcc=0.790 | Vl loss=0.1059 mae=0.309 r2=0.596 pcc=0.808 | ES 89/100
+  Ep 103/300 | Tr loss=0.1615 mae=0.424 r2=0.621 pcc=0.788 | Vl loss=0.1116 mae=0.320 r2=0.575 pcc=0.814 | ES 90/100
+2026-05-19 22:46:45,643 | INFO |   Ep 103/300 | Tr loss=0.1615 mae=0.424 r2=0.621 pcc=0.788 | Vl loss=0.1116 mae=0.320 r2=0.575 pcc=0.814 | ES 90/100
+  Ep 104/300 | Tr loss=0.1650 mae=0.427 r2=0.615 pcc=0.785 | Vl loss=0.1051 mae=0.309 r2=0.602 pcc=0.826 | ES 91/100
+2026-05-19 22:48:20,538 | INFO |   Ep 104/300 | Tr loss=0.1650 mae=0.427 r2=0.615 pcc=0.785 | Vl loss=0.1051 mae=0.309 r2=0.602 pcc=0.826 | ES 91/100
+  Ep 105/300 | Tr loss=0.1618 mae=0.422 r2=0.622 pcc=0.789 | Vl loss=0.1128 mae=0.321 r2=0.567 pcc=0.808 | ES 92/100
+2026-05-19 22:49:55,176 | INFO |   Ep 105/300 | Tr loss=0.1618 mae=0.422 r2=0.622 pcc=0.789 | Vl loss=0.1128 mae=0.321 r2=0.567 pcc=0.808 | ES 92/100
+  Ep 106/300 | Tr loss=0.1631 mae=0.424 r2=0.622 pcc=0.789 | Vl loss=0.1114 mae=0.315 r2=0.572 pcc=0.809 | ES 93/100
+2026-05-19 22:51:30,380 | INFO |   Ep 106/300 | Tr loss=0.1631 mae=0.424 r2=0.622 pcc=0.789 | Vl loss=0.1114 mae=0.315 r2=0.572 pcc=0.809 | ES 93/100
+  Ep 107/300 | Tr loss=0.1596 mae=0.420 r2=0.626 pcc=0.791 | Vl loss=0.1063 mae=0.311 r2=0.595 pcc=0.810 | ES 94/100
+2026-05-19 22:53:04,867 | INFO |   Ep 107/300 | Tr loss=0.1596 mae=0.420 r2=0.626 pcc=0.791 | Vl loss=0.1063 mae=0.311 r2=0.595 pcc=0.810 | ES 94/100
+  Ep 108/300 | Tr loss=0.1582 mae=0.418 r2=0.628 pcc=0.793 | Vl loss=0.1119 mae=0.323 r2=0.573 pcc=0.811 | ES 95/100
+2026-05-19 22:54:39,482 | INFO |   Ep 108/300 | Tr loss=0.1582 mae=0.418 r2=0.628 pcc=0.793 | Vl loss=0.1119 mae=0.323 r2=0.573 pcc=0.811 | ES 95/100
+  Ep 109/300 | Tr loss=0.1622 mae=0.422 r2=0.626 pcc=0.791 | Vl loss=0.1132 mae=0.322 r2=0.568 pcc=0.819 | ES 96/100
+2026-05-19 22:56:14,338 | INFO |   Ep 109/300 | Tr loss=0.1622 mae=0.422 r2=0.626 pcc=0.791 | Vl loss=0.1132 mae=0.322 r2=0.568 pcc=0.819 | ES 96/100
+  Ep 110/300 | Tr loss=0.1611 mae=0.422 r2=0.625 pcc=0.791 | Vl loss=0.1108 mae=0.321 r2=0.579 pcc=0.815 | ES 97/100
+2026-05-19 22:57:49,001 | INFO |   Ep 110/300 | Tr loss=0.1611 mae=0.422 r2=0.625 pcc=0.791 | Vl loss=0.1108 mae=0.321 r2=0.579 pcc=0.815 | ES 97/100
+  Ep 111/300 | Tr loss=0.1649 mae=0.429 r2=0.616 pcc=0.785 | Vl loss=0.1072 mae=0.311 r2=0.590 pcc=0.810 | ES 98/100
+2026-05-19 22:59:23,655 | INFO |   Ep 111/300 | Tr loss=0.1649 mae=0.429 r2=0.616 pcc=0.785 | Vl loss=0.1072 mae=0.311 r2=0.590 pcc=0.810 | ES 98/100
+  Ep 112/300 | Tr loss=0.1642 mae=0.425 r2=0.613 pcc=0.783 | Vl loss=0.1094 mae=0.314 r2=0.583 pcc=0.816 | ES 99/100
+2026-05-19 23:00:58,063 | INFO |   Ep 112/300 | Tr loss=0.1642 mae=0.425 r2=0.613 pcc=0.783 | Vl loss=0.1094 mae=0.314 r2=0.583 pcc=0.816 | ES 99/100
+  Ep 113/300 | Tr loss=0.1640 mae=0.426 r2=0.617 pcc=0.785 | Vl loss=0.1095 mae=0.313 r2=0.581 pcc=0.822 | ES 100/100
+2026-05-19 23:02:32,473 | INFO |   Ep 113/300 | Tr loss=0.1640 mae=0.426 r2=0.617 pcc=0.785 | Vl loss=0.1095 mae=0.313 r2=0.581 pcc=0.822 | ES 100/100
+
+  ⏹  Early stopping at epoch 113 (best=13)
+2026-05-19 23:02:32,473 | INFO | Early stopping at epoch 113 best=13
+
+✓ Training complete!
+
+  ── Final Test Results (best epoch = 13) ──────────────────
+  Loss : 0.1489
+  RMSE : 0.5569
+  MAE  : 0.4173
+  R²   : 0.4858
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/loss_curve.png
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/rmse_mae.png
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/r2_curve.png
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/pcc_curve.png
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/regression_scatter_test.png
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/early_stopping.png
+  ✓ History → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/logs/training_history.json
+============================================================
+DIAGNOSTIC 1: Per-exercise skeleton variance (C0)
+============================================================
+  Exercise      X-var      Y-var      Z-var  Z/X ratio
+-------------------------------------------------------
+        E0     0.0492     0.0100     0.0718      1.457
+        E1     0.0414     0.0088     0.0658      1.589
+        E2     0.0427     0.0088     0.0677      1.586
+        E3     0.0499     0.0093     0.0698      1.399
+        E4     0.0488     0.0092     0.0690      1.415
+        E5     0.0461     0.0102     0.0708      1.534
+        E6     0.0507     0.0092     0.0704      1.389
+        E7     0.0494     0.0095     0.0702      1.422
+        E8     0.0448     0.0092     0.0683      1.524
+        E9     0.0430     0.0100     0.0742      1.727
+
+============================================================
+DIAGNOSTIC 2: Quality score distribution per split
+============================================================
+ Train: mean=4.110 std=0.816 min=1.34 max=5.00 | correct=5791 erroneous=3439
+   Val: mean=4.213 std=0.753 min=2.28 max=5.00 | correct=1783 erroneous=874
+  Test: mean=4.032 std=0.777 min=2.14 max=5.00 | correct=2015 erroneous=1091
+  ✓ History NPZ → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/logs/training_history.npz
+  ✓ Test predictions NPZ → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/logs/test_predictions.npz
+========================================================================
+  Exercise         n      MAE     RMSE       R²      PCC
+────────────────────────────────────────────────────────────────────────
+  E0             464   0.4114   0.5161   0.5651   0.8580
+  E1             326   0.4121   0.5318   0.5874   0.8479
+  E2             258   0.3143   0.4039   0.7650   0.8880
+  E3             319   0.8810   0.9524  -0.9988   0.3406
+  E4             286   0.5204   0.5993   0.3726   0.8116
+  E5             321   0.3293   0.4243   0.4360   0.7033
+  E6             314   0.2860   0.4211   0.5853   0.8479
+  E7             319   0.3960   0.5893  -0.2154   0.3760
+  E8             317   0.3327   0.5011   0.6102   0.7975
+  E9             182   0.1793   0.2297  -0.5701   0.1312
+────────────────────────────────────────────────────────────────────────
+  Overall       3106   0.4173   0.5569   0.4858   0.7329
+========================================================================
+
+  ✓ Per-exercise CSV → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/logs/per_exercise_metrics.csv
+  ✓ Per-exercise scatter grid → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/per_exercise_scatter.png
+  ✓ Per-exercise bar chart → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/plots/per_exercise_bar.png
+  ✓ Per-exercise metrics NPZ → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_19_20_03_56/logs/per_exercise_metrics.npz
+============================================================
+  TRAINING SUMMARY — ST-GCN Regression (Single View)
+============================================================
+  Best Epoch       : 13  (stopped at 113)
+  Best Val MAE     : 0.2937
+  Best Val RMSE    : 0.4483
+  Best Val R²      : 0.6455
+  Best Val PCC     : 0.8417
+────────────────────────────────────────────────────────────
+  Test MAE         : 0.4173
+  Test RMSE        : 0.5569
+  Test R²          : 0.4858
+  Test PCC         : 0.7329
+============================================================
+2026-05-19 23:02:49,971 | INFO | Best Epoch=13  stopped_epoch=113
+2026-05-19 23:02:49,972 | INFO | Test MAE=0.4173
+2026-05-19 23:02:49,972 | INFO | Test RMSE=0.5569
+2026-05-19 23:02:49,972 | INFO | Test R²=0.4858
+2026-05-19 23:02:49,973 | INFO | Test PCC=0.7329
+
+✓ Summary CSV (overall + per-exercise) → /mvdlph/masa/GCN_SingleView_Regression_Results/training_summary.csv
