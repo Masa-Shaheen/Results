@@ -1,0 +1,7 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_25_09_49_43/logs/training_20260525_094943.log
+2026-05-25 09:49:43,784 | INFO | ======================================================================
+2026-05-25 09:49:43,785 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-05-25 09:49:43,785 | INFO | Camera : C0  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 100
+2026-05-25 09:49:43,786 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_05_25_09_49_43/logs/training_20260525_094943.log
+2026-05-25 09:49:43,786 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
