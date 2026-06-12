@@ -1,0 +1,300 @@
+✓ stdout → also writing to /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_06_06_21_24_03/logs/training_20260606_212403.log
+2026-06-06 21:24:03,749 | INFO | ======================================================================
+2026-06-06 21:24:03,750 | INFO | ST-GCN Single-View Regression | BZU Physiotherapy Dataset
+2026-06-06 21:24:03,750 | INFO | Camera : CNone  |  Split : 70/15/15  |  Epochs : 300  |  Patience : 100
+2026-06-06 21:24:03,751 | INFO | Log file : /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_06_06_21_24_03/logs/training_20260606_212403.log
+2026-06-06 21:24:03,752 | INFO | ======================================================================
+✓ parse_filename and load_skeleton defined
+
+[TRAIN] NPZ files found : 9477
+  Samples          : 9477
+  Unique trials    : 327
+  Quality mean±std : 4.127 ± 0.812
+  Exercise dist    :
+0     961
+1     966
+2     829
+3     979
+4     970
+5     933
+6     954
+7     965
+8     903
+9    1017
+  Samples (after camera filter) : 9477
+
+[VALID] NPZ files found : 2790
+  Samples          : 2790
+  Unique trials    : 100
+  Quality mean±std : 4.232 ± 0.741
+  Exercise dist    :
+0    326
+1    316
+2    295
+3    298
+4    322
+5    312
+6    302
+7    304
+8    181
+9    134
+  Samples (after camera filter) : 2790
+
+[TEST] NPZ files found : 3108
+  Samples          : 3108
+  Unique trials    : 107
+  Quality mean±std : 4.031 ± 0.777
+  Exercise dist    :
+0    465
+1    326
+2    258
+3    319
+4    287
+5    321
+6    314
+7    319
+8    317
+9    182
+  Samples (after camera filter) : 3108
+
+Checking for corrupted files...
+  [TRAIN] Removing 1 corrupted file(s)
+  [TRAIN] Clean samples : 9476
+  [VALID] Clean samples : 2790
+  [TEST] Removing 2 corrupted file(s)
+  [TEST] Clean samples : 3106
+
+Excluding exercises...
+  [TRAIN] Excluded E[0, 2, 3, 4, 5, 6, 7, 8, 9] → 8511 rows dropped, 965 remain
+  [VALID] Excluded E[0, 2, 3, 4, 5, 6, 7, 8, 9] → 2474 rows dropped, 316 remain
+  [TEST] Excluded E[0, 2, 3, 4, 5, 6, 7, 8, 9] → 2780 rows dropped, 326 remain
+
+Applying segment-level camera completeness filter...
+  build_single_view_df: 948 samples
+  Per-exercise counts:
+exercise
+1    948
+  Per-camera counts:
+camera
+0    316
+1    316
+2    316
+  build_single_view_df: 303 samples
+  Per-exercise counts:
+exercise
+1    303
+  Per-camera counts:
+camera
+0    101
+1    101
+2    101
+  build_single_view_df: 321 samples
+  Per-exercise counts:
+exercise
+1    321
+  Per-camera counts:
+camera
+0    107
+1    107
+2    107
+  Remaining exercises (remapped): [1]
+
+✓ No data-leakage detected across splits
+
+════════════════════════════════════════════════════════════════════
+  Split     Samples   Correct   Erroneous   Q mean   Q std   Q min   Q max
+  ──────────────────────────────────────────────────────────────────
+  Train         948       612         336    3.977   0.883   2.020   5.000
+  Val           303       204          99    4.131   0.752   2.850   4.940
+  Test          321       204         117    4.192   0.830   2.660   5.000
+════════════════════════════════════════════════════════════════════
+
+✓ Pre-split index ready  →  train / val / test DataFrames built
+0    524
+1    524
+2    524
+Name: camera, dtype: int64
+
+الكاميرات الموجودة: [0, 1, 2]
+camera      0    1    2
+exercise               
+1         524  524  524
+E1: correct=3 trials, erroneous=4 trials
+
+==================================================
+  Train
+==================================================
+            mean     var  count
+exercise                       
+1         3.9772  0.7805    948
+
+==================================================
+  Val
+==================================================
+            mean     var  count
+exercise                       
+1         4.1307  0.5661    303
+
+==================================================
+  Test
+==================================================
+            mean     var  count
+exercise                       
+1         4.1922  0.6885    321
+
+============================================================
+  All Splits Combined
+============================================================
+                  mean     var  count
+split exercise                       
+Test  1         4.1922  0.6885    321
+Train 1         3.9772  0.7805    948
+Val   1         4.1307  0.5661    303
+Frame length distribution (sample of 500 files):
+  min    = 30
+  max    = 199
+  mean   = 83.6
+  median = 82.0
+  std    = 24.4
+
+Percentiles:
+   25th = 69
+   50th = 82
+   75th = 96
+   90th = 111
+   95th = 129
+   99th = 155
+
+Value counts (top 10):
+    86 frames →   16 files (3.2%)
+    76 frames →   16 files (3.2%)
+    91 frames →   15 files (3.0%)
+    81 frames →   15 files (3.0%)
+    75 frames →   13 files (2.6%)
+    77 frames →   12 files (2.4%)
+    96 frames →   11 files (2.2%)
+    88 frames →   11 files (2.2%)
+    83 frames →   11 files (2.2%)
+    80 frames →   11 files (2.2%)
+✓ Skeleton visualisation helpers defined
+person                                                     P0
+exercise                                                    1
+trial_id                                                   T0
+segment                                                     3
+filepath    /mvdlph/Dataset_CVDLPT_Videos_Segments_P0P15_M...
+Name: 10, dtype: object
+Skeleton shape : (96, 17, 3)
+X range : [-0.369, 0.602]
+Y range : [-0.193, 0.198]
+Z range : [0.000, 0.994]
+  ✓ Skeleton plot saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_06_06_21_24_03/plots/sample_skeleton_3views.png
+  ✓ Motion frames saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_06_06_21_24_03/plots/sample_skeleton_motion.png
+Axis ranges across all frames:
+X: [-0.369, 0.602] — likely left/right
+Y: [-0.193, 0.198] — likely ???
+Z: [0.000, 0.994] — likely height
+
+Hip  mean XYZ: [0.        0.        0.3176026]
+Head mean XYZ: [-0.13838921 -0.18409199  0.9643488 ]
+
+Difference (head - hip): [-0.13838921 -0.18409199  0.64674616]
+
+Camera 0: no file found
+
+Camera 1: no file found
+
+Camera 2: no file found
+✓ BZUDataset defined (regression only)
+Joint distances from Hip (body center):
+  Joint  0 (Hip         ) distance=0  
+  Joint  1 (R-Hip       ) distance=1  ─
+  Joint  2 (R-Knee      ) distance=2  ──
+  Joint  3 (R-Ankle     ) distance=3  ───
+  Joint  4 (L-Hip       ) distance=1  ─
+  Joint  5 (L-Knee      ) distance=2  ──
+  Joint  6 (L-Ankle     ) distance=3  ───
+  Joint  7 (Spine       ) distance=1  ─
+  Joint  8 (Thorax      ) distance=2  ──
+  Joint  9 (Neck        ) distance=3  ───
+  Joint 10 (Head        ) distance=4  ────
+  Joint 11 (L-Shoulder  ) distance=3  ───
+  Joint 12 (L-Elbow     ) distance=4  ────
+  Joint 13 (L-Wrist     ) distance=5  ─────
+  Joint 14 (R-Shoulder  ) distance=3  ───
+  Joint 15 (R-Elbow     ) distance=4  ────
+  Joint 16 (R-Wrist     ) distance=5  ─────
+
+✓ True ST-GCN sanity check passed — output shape: torch.Size([2])
+✓ Total trainable parameters: 3,069,032
+✓ STGCN_Regression (True ST-GCN, Yan et al. AAAI 2018) defined
+Device : cuda
+GPU    : Tesla V100-PCIE-32GB
+✓ centre_and_scale and run_epoch (regression) defined
+=================================================================
+Quality score distribution audit
+=================================================================
+  ✓ Saved → /mvdlph/masa/GCN_SingleView_Regression_Results/run_2026_06_06_21_24_03/plots/split_quality_distributions.png
+
+Split    Type              n    mean     std    min    25%    50%    75%    max
+----------------------------------------------------------------------
+Train    Correct (T≤2)    612   4.529   0.374   3.70   4.37   4.56   4.76   5.00
+Train    Erroneous (T≥3)    336   2.972   0.619   2.02   2.43   2.92   3.44   4.00
+
+Val      Correct (T≤2)    204   4.600   0.327   4.06   4.40   4.47   4.94   4.94
+Val      Erroneous (T≥3)     99   3.164   0.346   2.85   2.88   3.20   3.20   3.72
+
+Test     Correct (T≤2)    204   4.795   0.186   4.38   4.70   4.88   4.90   5.00
+Test     Erroneous (T≥3)    117   3.142   0.295   2.66   3.10   3.28   3.28   3.48
+
+=================================================================
+Person distribution across splits
+=================================================================
+  Train : ['P0', 'P10', 'P14', 'P15', 'P2', 'P3', 'P4', 'P5', 'P7']
+  Val   : ['P1', 'P11', 'P6']
+  Test  : ['P12', 'P8', 'P9']
+
+Per-person quality mean per split:
+
+  Train:
+         mean    std  count
+person                     
+P0      3.947  0.270     90
+P10     3.074  0.648    150
+P14     3.031  1.117    132
+P15     3.636  0.326    135
+P2      4.913  0.109     90
+P3      4.480  0.043     90
+P4      4.500  0.226     81
+P5      4.820  0.059     90
+P7      4.660  0.103     90
+
+  Val:
+         mean    std  count
+person                     
+P1      4.940  0.000     90
+P11     3.420  0.607    123
+P6      4.293  0.166     90
+
+  Test:
+         mean    std  count
+person                     
+P12     3.373  0.551    144
+P8      4.800  0.082     90
+P9      4.920  0.059     87
+
+=================================================================
+Exercise balance across splits
+=================================================================
+    Train  Val  Test  Train%   Val%  Test%
+E1    948  303   321   100.0  100.0  100.0
+✓ Plotting helpers (regression) defined
+✓ EarlyStopping defined (monitoring MAE)
+2026-06-06 21:24:34,046 | INFO | ======================================================================
+2026-06-06 21:24:34,047 | INFO | STARTING REGRESSION TRAINING  (with Early Stopping on MAE)
+2026-06-06 21:24:34,048 | INFO | ======================================================================
+2026-06-06 21:24:34,049 | INFO | train=948 val=303 test=321
+
+════════════════════════════════════════════════════════════════════
+  Camera CNone  |  Train: 948  Val: 303  Test: 321
+  Patience: 100  |  LR: 1e-4  |  Batch: 48
+════════════════════════════════════════════════════════════════════
